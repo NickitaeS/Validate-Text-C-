@@ -1,0 +1,29 @@
+public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+         switch (textBox1.Text)
+            {
+                case "PRODUCT1":
+                    textBox1.Text = "PRODUCT1";
+                    break;
+                case "PRODUCT2":
+                    textBox1.Text = "PRODUCT2";
+                    break;
+                case "PRODUCT3":
+                    textBox1.Text = "PRODUCT3";
+                    break;
+                case " ":
+                    textBox1.Text = " ";
+                    break;
+                default :
+                    MessageBox.Show("Please scan correct product barcode");
+                    textBox1.Text = " ";
+                    break;
+            }
+        }
